@@ -1,0 +1,23 @@
+[
+  {
+    "id": "doc-led",
+    "name": "LED Bulb Safety Standard — Demo",
+    "text": "LED lamps and self-ballasted LED lamps. Safety requirements, marking, electrical safety, testing, construction and performance. Demonstration document for BIS Setu.",
+    "source": "BIS Standard Demo",
+    "pages": 18
+  },
+  {
+    "id": "doc-smps",
+    "name": "SMPS Unit Verification — Demo",
+    "text": "Switch mode power supply requirements, electrical safety, insulation, marking, testing and compliance. Demonstration document for BIS Setu.",
+    "source": "BIS Standard Demo",
+    "pages": 22
+  },
+  {
+    "id": "doc-pump",
+    "name": "Water Pump Certification — Demo",
+    "text": "Water pump product requirements, testing, marking, documentation and certification workflow. Demonstration document for BIS Setu.",
+    "source": "BIS Standard Demo",
+    "pages": 20
+  }
+]

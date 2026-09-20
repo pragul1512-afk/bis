@@ -1,0 +1,22 @@
+{
+  "name": "bis-setu-pc-prototype",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BIS Setu PC full-stack hackathon prototype",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js",
+    "check": "node --check server/server.js && node --check server/auth.js && node --check server/db.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "info": {
+    "name": "BIS Setu API",
+    "_postman_id": "bis-setu-demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key":"baseUrl","value":"http://localhost:3000"},{"key":"token","value":""}],
+  "item": [
+    {"name":"Health","request":{"method":"GET","url":"{{baseUrl}}/api/health"}},
+    {"name":"Login","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"email\":\"demo@bis-setu.local\",\"password\":\"demo123\"}"},"url":"{{baseUrl}}/api/auth/login"}},
+    {"name":"Dashboard","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer {{token}}"}],"url":"{{baseUrl}}/api/dashboard"}},
+    {"name":"Verify Product","request":{"method":"POST","header":[{"key":"Authorization","value":"Bearer {{token}}"},{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"productName\":\"LED Bulb\"}"},"url":"{{baseUrl}}/api/products/verify"}},
+    {"name":"Document Search","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer {{token}}"}],"url":"{{baseUrl}}/api/documents/search?q=electrical%20safety"}},
+    {"name":"AI Chat","request":{"method":"POST","header":[{"key":"Authorization","value":"Bearer {{token}}"},{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"message\":\"What are the requirements for an LED bulb?\"}"},"url":"{{baseUrl}}/api/ai/chat"}},
+    {"name":"Certifications","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer {{token}}"}],"url":"{{baseUrl}}/api/certifications"}}
+  ]
+}

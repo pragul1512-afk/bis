@@ -1,0 +1,55 @@
+[
+  {
+    "id": "cert-001",
+    "userId": "u-demo",
+    "product": "LED Bulb",
+    "manufacturer": "EcoLighting Pvt. Ltd.",
+    "standard": "IS XXXX (Demo)",
+    "status": "Testing",
+    "progress": 75,
+    "steps": [
+      "Application",
+      "Document Submission",
+      "Testing",
+      "Inspection",
+      "Approval"
+    ],
+    "completed": 2,
+    "updatedAt": "2026-09-20T06:43:51.240Z"
+  },
+  {
+    "id": "cert-002",
+    "userId": "u-demo",
+    "product": "SMPS Unit",
+    "manufacturer": "EcoLighting Pvt. Ltd.",
+    "standard": "IS YYYY (Demo)",
+    "status": "Document Submission",
+    "progress": 50,
+    "steps": [
+      "Application",
+      "Document Submission",
+      "Testing",
+      "Approval"
+    ],
+    "completed": 1,
+    "updatedAt": "2026-09-20T06:43:51.240Z"
+  },
+  {
+    "id": "cert-8297c7abf3",
+    "userId": "u-demo",
+    "product": "LED Bulb",
+    "manufacturer": "EcoLighting Pvt. Ltd.",
+    "standard": "Candidate Standard (Demo)",
+    "status": "Document Submission",
+    "progress": 25,
+    "steps": [
+      "Application",
+      "Document Submission",
+      "Testing",
+      "Inspection",
+      "Approval"
+    ],
+    "completed": 1,
+    "updatedAt": "2026-09-20T06:51:54.771Z"
+  }
+]
