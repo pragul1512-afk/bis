@@ -1,11 +1,12 @@
 const jwt = require("jsonwebtoken");
+const crypto = require("crypto");
 const { read } = require("./db");
 
-const SECRET = process.env.JWT_SECRET || "dev-secret-change-me";
+const configuredSecret = process.env.JWT_SECRET;
+const SECRET = configuredSecret || crypto.randomBytes(32).toString("hex");
 
-if (process.env.NODE_ENV === "production" &&
-    (!process.env.JWT_SECRET || process.env.JWT_SECRET === "replace-with-a-long-random-secret")) {
-  throw new Error("JWT_SECRET must be configured with a strong value in production");
+if (!configuredSecret) {
+  console.warn("JWT_SECRET is not configured; using a temporary secret for this process.");
 }
 
 function sign(user) {
